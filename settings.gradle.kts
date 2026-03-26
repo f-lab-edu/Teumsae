@@ -24,3 +24,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "teumsae"
 include(":app")
+include(":core")
+include(":core")
