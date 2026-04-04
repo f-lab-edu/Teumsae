@@ -7,6 +7,11 @@ plugins {
 
 android {
     namespace = "com.hyc.teumsae.core"
+
+    buildFeatures {
+        buildConfig = true
+    }
+
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -18,15 +23,21 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
+        buildConfigField("String", "BASE_URL", "\"https://dev.api.teumsae.com/\"")
     }
 
     buildTypes {
+        debug {
+            buildConfigField("String", "BASE_URL", "\"https://dev.api.teumsae.com/\"")
+        }
+
         release {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            buildConfigField("String", "BASE_URL", "\"https://api.teumsae.com/\"")
         }
     }
     compileOptions {
