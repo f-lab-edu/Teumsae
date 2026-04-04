@@ -56,6 +56,10 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.kotlinx.serialization.json)
+    implementation(projects.feature.home)
+    implementation(projects.feature.onboarding)
+    implementation(projects.feature.study)
+    implementation(projects.feature.collection)
 
 
     implementation(libs.androidx.activity.compose)

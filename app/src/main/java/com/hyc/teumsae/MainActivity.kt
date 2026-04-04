@@ -3,7 +3,8 @@ package com.hyc.teumsae
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material3.Text
+import androidx.navigation.compose.rememberNavController
+import com.hyc.teumsae.navigation.AppNavHost
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -12,7 +13,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            Text("Hello world!")
+            val navController = rememberNavController()
+            AppNavHost(navController = navController)
         }
     }
 }
