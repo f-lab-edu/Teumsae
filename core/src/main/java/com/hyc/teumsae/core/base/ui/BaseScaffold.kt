@@ -6,7 +6,10 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.SnackbarHost
+import androidx.compose.material3.SnackbarHostState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.PointerEventPass
@@ -17,6 +20,7 @@ import com.hyc.teumsae.core.base.viewmodel.UiState
 fun BaseScaffold(
     modifier: Modifier = Modifier,
     uiState: UiState,
+    snackBarHostState: SnackbarHostState = remember { SnackbarHostState() },
     blockTouchOnLoading: Boolean = true,
     appBar: @Composable () -> Unit = {},
     bottomNavigationBar: @Composable () -> Unit = {},
@@ -26,6 +30,7 @@ fun BaseScaffold(
         modifier = modifier,
         topBar = appBar,
         bottomBar = bottomNavigationBar,
+        snackbarHost = { SnackbarHost(hostState = snackBarHostState) }
     ) { paddingValues ->
         Box(modifier = Modifier.fillMaxSize()) {
             content(paddingValues)
