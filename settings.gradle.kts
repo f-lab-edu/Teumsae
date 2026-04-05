@@ -24,3 +24,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "teumsae"
 include(":app")
+include(":core")
+include(":core")
+include(":feature:onboarding")
+include(":feature:home")
+include(":feature:study")
+include(":feature:collection")
