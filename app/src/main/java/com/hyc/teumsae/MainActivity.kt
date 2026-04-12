@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.navigation.compose.rememberNavController
+import com.hyc.teumsae.design_system.theme.TeumsaeTheme
 import com.hyc.teumsae.navigation.AppNavHost
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -13,8 +14,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            val navController = rememberNavController()
-            AppNavHost(navController = navController)
+            TeumsaeTheme {
+                val navController = rememberNavController()
+                AppNavHost(navController = navController)
+            }
         }
     }
 }

@@ -60,6 +60,7 @@ dependencies {
     implementation(projects.feature.onboarding)
     implementation(projects.feature.study)
     implementation(projects.feature.collection)
+    implementation(projects.designSystem)
 
 
     implementation(libs.androidx.activity.compose)

@@ -1,0 +1,8 @@
+com.hyc.teumsae.design_system.design-system-pngs-0 /Users/hans/space/02_develop/01_project/teumsae/design-system/build/generated/res/pngs/debug
+com.hyc.teumsae.design_system.design-system-updated_navigation_xml-1 /Users/hans/space/02_develop/01_project/teumsae/design-system/build/generated/updated_navigation_xml/debug
+com.hyc.teumsae.design_system.design-system-mergeDebugResources-2 /Users/hans/space/02_develop/01_project/teumsae/design-system/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.hyc.teumsae.design_system.design-system-mergeDebugResources-3 /Users/hans/space/02_develop/01_project/teumsae/design-system/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.hyc.teumsae.design_system.design-system-debug-4 /Users/hans/space/02_develop/01_project/teumsae/design-system/build/intermediates/merged_res/debug/mergeDebugResources
+com.hyc.teumsae.design_system.design-system-debug-5 /Users/hans/space/02_develop/01_project/teumsae/design-system/build/intermediates/packaged_res/debug/packageDebugResources
+com.hyc.teumsae.design_system.design-system-debug-6 /Users/hans/space/02_develop/01_project/teumsae/design-system/src/debug/res
+com.hyc.teumsae.design_system.design-system-main-7 /Users/hans/space/02_develop/01_project/teumsae/design-system/src/main/res
