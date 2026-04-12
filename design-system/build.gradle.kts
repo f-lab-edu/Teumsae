@@ -1,18 +1,10 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.hilt.android)
-    alias(libs.plugins.ksp)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.compose.compiler)
-    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
-    namespace = "com.hyc.teumsae"
-
-    buildFeatures {
-        compose = true
-    }
-
+    namespace = "com.hyc.teumsae.design_system"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -20,13 +12,10 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.hyc.teumsae"
         minSdk = 29
-        targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -48,27 +37,16 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.hilt.android)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.androidx.compose.material.icons.extended)
+
     implementation(platform(libs.compose.bom))
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.compose.ui.tooling.preview)
     debugImplementation(libs.androidx.compose.ui.tooling)
-    implementation(libs.androidx.navigation.compose)
-    implementation(libs.androidx.hilt.navigation.compose)
-    implementation(libs.kotlinx.serialization.json)
-    implementation(projects.feature.home)
-    implementation(projects.feature.onboarding)
-    implementation(projects.feature.study)
-    implementation(projects.feature.collection)
-    implementation(projects.designSystem)
 
-
-    implementation(libs.androidx.activity.compose)
-
-    testImplementation(libs.junit)
-
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-
-    ksp(libs.hilt.compiler)
+    implementation(libs.coil.compose)
+    implementation(libs.coil.network.okhttp)
 }
