@@ -22,8 +22,6 @@ fun TeumsaeTheme(
         LocalDimens provides dimens,
         LocalShapes provides shapes,
     ) {
-        MaterialTheme(
-            content = content,
-        )
+        MaterialTheme(content = content)
     }
 }

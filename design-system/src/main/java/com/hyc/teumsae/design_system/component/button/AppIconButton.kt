@@ -26,8 +26,8 @@ fun AppIconButton(
         modifier = modifier,
         shape = AppTheme.shapes.medium,
         colors = IconButtonDefaults.iconButtonColors(
-            containerColor = AppTheme.colors.neutralLight300,
-            contentColor = AppTheme.colors.neutralDark300,
+            containerColor = AppTheme.colors.neutral300,
+            contentColor = AppTheme.colors.neutral800,
         )
     ) {
         Icon(icon, null)

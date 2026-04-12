@@ -27,16 +27,16 @@ fun AppOutlinedButton(
         shape = AppTheme.shapes.large1,
         colors = ButtonDefaults.buttonColors(
             containerColor = Color.Transparent,
-            contentColor = AppTheme.colors.highlight500,
+            contentColor = AppTheme.colors.primary600,
             disabledContainerColor = Color.Transparent,
-            disabledContentColor = AppTheme.colors.neutralLight500,
+            disabledContentColor = AppTheme.colors.neutral500,
         ),
         border = BorderStroke(
             width = AppTheme.dimens.s2,
             color = if (enabled) {
-                AppTheme.colors.highlight500
+                AppTheme.colors.primary600
             } else {
-                AppTheme.colors.neutralLight500
+                AppTheme.colors.neutral500
             }
         ),
         contentPadding = PaddingValues(AppTheme.dimens.s16),

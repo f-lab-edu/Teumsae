@@ -29,8 +29,8 @@ fun AppTextButton(
         onClick = onClick,
         shape = AppTheme.shapes.large1,
         colors = ButtonDefaults.textButtonColors(
-            contentColor = color ?: AppTheme.colors.highlight500,
-            disabledContentColor = disabledColor ?: AppTheme.colors.neutralLight500
+            contentColor = color ?: AppTheme.colors.primary600,
+            disabledContentColor = disabledColor ?: AppTheme.colors.neutral500
         ),
         contentPadding = PaddingValues(AppTheme.dimens.s4)
     ) {
@@ -66,7 +66,7 @@ fun AppTextButtonPreview() {
 
             AppTextButton(
                 text = "TextButton(Custom Color)",
-                color = AppTheme.colors.supportWarning300,
+                color = AppTheme.colors.warningStrong,
                 onClick = {}
             )
         }

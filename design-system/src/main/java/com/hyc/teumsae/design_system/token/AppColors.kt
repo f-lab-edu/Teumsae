@@ -5,33 +5,33 @@ import androidx.compose.ui.graphics.Color
 
 @Immutable
 data class AppColors(
-    val highlight500: Color = ColorPallet.blue600,
-    val highlight400: Color = ColorPallet.blue500,
-    val highlight300: Color = ColorPallet.blue400,
-    val highlight200: Color = ColorPallet.blue300,
-    val highlight100: Color = ColorPallet.blue100,
+    val primary600: Color = ColorPallet.blue600,
+    val primary500: Color = ColorPallet.blue500,
+    val primary400: Color = ColorPallet.blue400,
+    val primary300: Color = ColorPallet.blue300,
+    val primary200: Color = ColorPallet.blue200,
+    val primary100: Color = ColorPallet.blue100,
 
-    val neutralLight500: Color = ColorPallet.white500,
-    val neutralLight400: Color = ColorPallet.white400,
-    val neutralLight300: Color = ColorPallet.white300,
-    val neutralLight200: Color = ColorPallet.white200,
-    val neutralLight100: Color = ColorPallet.white100,
+    val neutral100: Color = ColorPallet.white100,
+    val neutral200: Color = ColorPallet.white200,
+    val neutral300: Color = ColorPallet.white300,
+    val neutral400: Color = ColorPallet.white400,
+    val neutral500: Color = ColorPallet.white500,
+    val neutral600: Color = ColorPallet.black100,
+    val neutral700: Color = ColorPallet.black200,
+    val neutral800: Color = ColorPallet.black300,
+    val neutral900: Color = ColorPallet.black400,
+    val neutral1000: Color = ColorPallet.black500,
 
-    val neutralDark500: Color = ColorPallet.black500,
-    val neutralDark400: Color = ColorPallet.black400,
-    val neutralDark300: Color = ColorPallet.black300,
-    val neutralDark200: Color = ColorPallet.black200,
-    val neutralDark100: Color = ColorPallet.black100,
+    val successStrong: Color = ColorPallet.green300,
+    val successDefault: Color = ColorPallet.green200,
+    val successLight: Color = ColorPallet.green100,
 
-    val supportSuccess300: Color = ColorPallet.green300,
-    val supportSuccess200: Color = ColorPallet.green200,
-    val supportSuccess100: Color = ColorPallet.green100,
+    val warningStrong: Color = ColorPallet.orange300,
+    val warningDefault: Color = ColorPallet.orange200,
+    val warningLight: Color = ColorPallet.orange100,
 
-    val supportWarning300: Color = ColorPallet.orange300,
-    val supportWarning200: Color = ColorPallet.orange200,
-    val supportWarning100: Color = ColorPallet.orange100,
-
-    val supportError300: Color = ColorPallet.red300,
-    val supportError200: Color = ColorPallet.red200,
-    val supportError100: Color = ColorPallet.red100
+    val errorStrong: Color = ColorPallet.red300,
+    val errorDefault: Color = ColorPallet.red200,
+    val errorLight: Color = ColorPallet.red100,
 )

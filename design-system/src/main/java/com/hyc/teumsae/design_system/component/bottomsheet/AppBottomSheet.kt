@@ -49,7 +49,7 @@ fun AppBottomSheet(
 ) {
     if(controller.isVisible) {
         ModalBottomSheet(
-            containerColor = AppTheme.colors.neutralLight100,
+            containerColor = AppTheme.colors.neutral100,
             onDismissRequest = { if(dismissOnClickOutside) controller.hide() },
             modifier = modifier.then(
                 if(maxHeight != null) Modifier.heightIn(max = maxHeight)
@@ -82,7 +82,7 @@ private fun AppBottomSheetDragHandle() {
             .width(40.dp)
             .height(4.dp)
             .clip(CircleShape)
-            .background(AppTheme.colors.neutralLight500)
+            .background(AppTheme.colors.neutral500)
     )
 }
 

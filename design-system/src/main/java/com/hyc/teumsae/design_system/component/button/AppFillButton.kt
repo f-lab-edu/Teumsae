@@ -26,10 +26,10 @@ fun AppFillButton(
         modifier = modifier,
         shape = AppTheme.shapes.large1,
         colors = ButtonDefaults.buttonColors(
-            containerColor = AppTheme.colors.highlight500,
-            contentColor = AppTheme.colors.neutralLight100,
-            disabledContainerColor = AppTheme.colors.neutralLight300,
-            disabledContentColor = AppTheme.colors.neutralLight100,
+            containerColor = AppTheme.colors.primary600,
+            contentColor = AppTheme.colors.neutral100,
+            disabledContainerColor = AppTheme.colors.neutral300,
+            disabledContentColor = AppTheme.colors.neutral100,
         ),
         contentPadding = PaddingValues(AppTheme.dimens.s16)
     ) {
