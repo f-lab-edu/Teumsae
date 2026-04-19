@@ -48,11 +48,17 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.kotlinx.serialization.json)
+    implementation(projects.designSystem)
 
     implementation(libs.coil.compose)
     implementation(libs.coil.network.okhttp)
 
     implementation(libs.kotlinx.coroutines.android)
+
+    implementation(projects.core.ui)
+    implementation(projects.core.domain)
+    implementation(libs.androidx.compose.material.icons.extended)
+    implementation(libs.wheel.picker.compose)
 
     testImplementation(libs.junit)
 

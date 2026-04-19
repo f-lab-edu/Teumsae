@@ -59,8 +59,11 @@ dependencies {
     implementation(projects.feature.home)
     implementation(projects.feature.onboarding)
     implementation(projects.feature.study)
-    implementation(projects.feature.collection)
     implementation(projects.designSystem)
+    implementation(projects.core.datastore)
+    implementation(projects.core.ui)
+    implementation(projects.core.domain)
+    implementation(projects.core.data)
 
 
     implementation(libs.androidx.activity.compose)

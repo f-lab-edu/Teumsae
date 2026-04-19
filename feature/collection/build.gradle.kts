@@ -55,6 +55,8 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
 
 
+    implementation(projects.core.ui)
+
     testImplementation(libs.junit)
 
     androidTestImplementation(libs.androidx.junit)

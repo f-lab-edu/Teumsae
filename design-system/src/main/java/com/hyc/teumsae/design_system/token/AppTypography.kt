@@ -9,7 +9,7 @@ data class AppTypography(
     // Heading
     val headline1: TextStyle = TextStyle(
         fontSize = 28.sp,
-        fontWeight = FontWeight.SemiBold,
+        fontWeight = FontWeight.ExtraBold,
         lineHeight = 36.sp,
     ),
     val headline2: TextStyle = TextStyle(
@@ -72,5 +72,22 @@ data class AppTypography(
         fontSize = 12.sp,
         fontWeight = FontWeight.Normal,
         lineHeight = 16.sp,
+    ),
+
+    // Caption
+    val caption1: TextStyle = TextStyle(
+        fontSize = 12.sp,
+        fontWeight = FontWeight.Normal,
+        lineHeight = 16.sp,
+    ),
+    val caption2: TextStyle = TextStyle(
+        fontSize = 10.sp,
+        fontWeight = FontWeight.Normal,
+        lineHeight = 14.sp,
+    ),
+    val caption3: TextStyle = TextStyle(
+        fontSize = 8.sp,
+        fontWeight = FontWeight.Normal,
+        lineHeight = 12.sp,
     ),
 )
