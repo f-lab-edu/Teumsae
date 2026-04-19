@@ -12,6 +12,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.ModalBottomSheetProperties
 import androidx.compose.material3.SheetState
 import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
@@ -20,6 +21,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.runtime.Stable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.tooling.preview.Preview
@@ -27,6 +29,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.hyc.teumsae.design_system.theme.AppTheme
 
+@Stable
 class AppBottomSheetController {
     var isVisible by mutableStateOf(false)
         private set
@@ -61,7 +64,10 @@ fun AppBottomSheet(
             ),
             sheetState = sheetState,
             sheetGesturesEnabled = sheetGesturesEnabled,
-            dragHandle = dragHandle
+            dragHandle = dragHandle,
+            properties = ModalBottomSheetProperties(
+                shouldDismissOnClickOutside = dismissOnClickOutside
+            )
         ) {
             Column(
                 modifier = Modifier
