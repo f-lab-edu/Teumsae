@@ -21,12 +21,18 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://jitpack.io") }
     }
 }
 
 rootProject.name = "teumsae"
 include(":app")
-include(":core")
+include(":core:domain")
+include(":core:data")
+include(":core:network")
+include(":core:database")
+include(":core:datastore")
+include(":core:ui")
 include(":feature:onboarding")
 include(":feature:home")
 include(":feature:study")

@@ -54,7 +54,7 @@ dependencies {
 
     implementation(libs.kotlinx.coroutines.android)
 
-    implementation(projects.core)
+    implementation(projects.core.ui)
 
     testImplementation(libs.junit)
 

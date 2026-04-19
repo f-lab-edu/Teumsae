@@ -22,6 +22,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -76,14 +77,16 @@ fun AppBottomSheet(
 
 @Composable
 private fun AppBottomSheetDragHandle() {
-    Box(
-        modifier = Modifier
-            .padding(vertical = AppTheme.dimens.s16)
-            .width(40.dp)
-            .height(4.dp)
-            .clip(CircleShape)
-            .background(AppTheme.colors.neutral500)
-    )
+    Box(modifier = Modifier.semantics(mergeDescendants = true) {}) {
+        Box(
+            modifier = Modifier
+                .padding(vertical = AppTheme.dimens.s16)
+                .width(40.dp)
+                .height(4.dp)
+                .clip(CircleShape)
+                .background(AppTheme.colors.neutral500)
+        )
+    }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
